@@ -6,24 +6,38 @@
     <link href="style.css" rel="stylesheet"/>    <title>Rakit PC</title> 
     <!-- judul webisite nya -->
 </head>
+
 <body>
-    <div class="text-center">
+    <div id="header-container"></div>
 
-        <h1>SIMULASI RAKIT PC</h1>
     
+    <div class="text-left">
+        <p>DITES DULU</p>
     </div>
 
-    <div class="navbar">
 
-        <nav>
-            <a href="Index.html">HOME</a>
-            <a href="package.html">PACKAGE</a>
-            <a href="bybudget.html">BY BUDGET</a>
-            <a href="custom.html">CUSTOM</a>
-            <a href="about.html">ABOUT</a>
-        </nav>
 
-    </div>
-    
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")  // Pastikan lokasi file benar
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok " + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById("header-container").innerHTML = data;
+                })
+                .catch(error => {
+                    console.error("Error loading header:", error);
+                });
+        });
+    </script>
+
+
 </body>
 </html> 
