@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet"/>    <title>Rakit PC</title> 
-    <!-- judul webisite nya -->
+    <link href="style.css" rel="stylesheet"/>    <title>Simulasi Rakit PC</title> 
+    
 </head>
 <body>
     <div id="header-container"></div>
-    <div class="text-left">
-        <p>.</p>
+    
+    <div class="container">
+        <div class="isi">
+            <p>Website ini membantu anda untuk mencari komponen yang terbaik untuk komputer anda</p>
+        </div>
     </div>
     
 
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            fetch("header.html")  // Pastikan lokasi file benar
+            fetch("header.html") 
                 .then(response => {
                     if (!response.ok) {
                         throw new Error("Network response was not ok " + response.statusText);
