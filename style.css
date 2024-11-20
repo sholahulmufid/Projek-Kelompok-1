@@ -109,10 +109,12 @@ body {
 
 }
 
-.text-left {
+.text {
   margin-top: 150px;
   margin-left:300px;
-  margin-right:100px;
+  margin-right:300px;
+  text-align: justify;
+  font-size: large;
 }
 
 .text-center {
