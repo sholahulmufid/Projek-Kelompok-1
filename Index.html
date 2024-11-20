@@ -7,7 +7,7 @@
     
 </head>
 <body>
-    <div id="header-container"></div>
+    
     <div class="main">
             <p>tetur adipiscing elit. Ut pretium velit a orci tempor ornare. Aliquam erat volutpat. Duis vitae augue rutrum, mollis nisl facilisis, efficitur eros. Fusce sit amet ultrices mauris, nec lobortis orci. Donec pulvinar libero in ligula lacinia tincidunt. Etiam elit odio, suscipit quis maximus gravida, ullamcorper sed nibh. Donec at massa sit amet sem feugiat lacinia eu ut magna. Donec maximus lorem tortor.</p>
             <p>Cras vitae nisl eget neque posuere feugiat quis vel odio. Fusce consectetur massa enim, vitae porttitor nisl fringilla in. Fusce finibus vel mauris sed condimentum. Sed auctor ornare orci, eu pulvinar enim lacinia id. Cras ut eros ut diam mollis sollicitudin at vel massa. Morbi eget scelerisque felis, id malesuada purus. Donec eget elit finibus, tincidunt urna et, auctor lacus. Sed viverra nisl non velit dignissim blandit. Sed non purus vitae lacus ullamcorper dictum. Aliquam neque erat, tempus sit amet ligula consectetur, varius tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed fermentum quam id convallis mollis. Nulla quam tortor, dictum ac vehicula lobortis, consectetur ut justo. Proin vitae placerat mauris, sed rhoncus nisi. Sed hendrerit vel sapien et ullamcorper.</p>
@@ -18,8 +18,7 @@
             
     </div>
     
-
-
+    <div id="header-container"></div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             fetch("header.html") 
@@ -37,5 +36,25 @@
                 });
         });
     </script>
-</body>
+
+
+    <div id="footer-container"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("footer.html") 
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error("Network response was not ok " + response.statusText);
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        document.getElementById("footer-container").innerHTML = data;
+                    })
+                    .catch(error => {
+                        console.error("Error loading header:", error);
+                 });
+            });
+        </script>
+    </body>
 </html> 
