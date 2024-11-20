@@ -101,8 +101,8 @@ body {
   height: 400px;
   width: 300px;
   font-size: 20pt;
-  background-color: rgb(20, 20, 20);
-  color: rgb(255, 255, 255);
+  background-color: white;
+  color: black;
 }
 
 .inputbudget {
