@@ -59,13 +59,13 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: rgb(238, 255, 0);
+  color: rgb(255, 0, 0);
 }
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 8px;
-  border-bottom: 2px solid rgb(255, 230, 0);
+  border-bottom: 2px solid rgb(255, 0, 0);
   transform: scalex(0);
   transition: 0.2s linear;
 }
@@ -101,20 +101,21 @@ body {
   height: 400px;
   width: 300px;
   font-size: 20pt;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .inputbudget {
   margin-top: 50px;
 }
 
-.text {
+.main {
   margin-top: 150px;
   margin-left: 300px;
   margin-right: 300px;
   text-align: justify;
   font-size: large;
+  color: black;
 }
 
 .text-center {
@@ -122,3 +123,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+p {
+  margin: 20px;
+
+}
+
