@@ -97,16 +97,15 @@ body {
 }
 
 .box {
-  height: 150px;
-  width: 150px;
-  font-size: 30pt;
+  height: 400px;
+  width: 300px;
+  font-size: 20pt;
   background-color: white;
   color: black;
 }
 
 .inputbudget {
   margin-top: 50px;
-
 }
 
 .text {
@@ -121,4 +120,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+p {
+  margin-bottom: 20px; 
 }
