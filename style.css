@@ -29,21 +29,20 @@ body {
   right: 0;
   top: 0;
   z-index: 9999;
-
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 .navbar .navbar-logo {
   font-size: 32px;
   font-weight: 700;
 
-  color: black;
+  color: rgb(255, 255, 255);
 
   font-style: italic;
 }
 
 .navbar .navbar-logo span {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
 }
 
 .navbar-nav {
@@ -102,8 +101,8 @@ body {
   height: 400px;
   width: 300px;
   font-size: 20pt;
-  background-color: white;
-  color: black;
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
 }
 
 .inputbudget {
