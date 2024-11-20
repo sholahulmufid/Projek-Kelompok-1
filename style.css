@@ -30,18 +30,18 @@ body {
   right: 0;
   top: 0;
   z-index: 9999;
-  background-color: rgb(116, 116, 116);
+  background-color: white;
 }
 
 .navbar .navbar-logo {
   font-size: 32px;
   font-weight: 700;
-  color: white;
+  color: black;
   font-style: italic;
 }
 
 .navbar .navbar-logo span {
-  color: black;
+  color: rgb(116, 116, 116);
 }
 
 .navbar-nav {
@@ -74,23 +74,54 @@ body {
 }
 
 .container {
-  color: whitesmoke;
-  margin-top: 10px;
+  display: flex;
+}
+
+.isi {
+  margin-top: 0px;
+  margin-left:300px;
+  margin-right:100px;
+}
+
+.katalog {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 5em;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 120px;
+}
+
+.box {
+  height: 400px;
+  width: 300px;
+  font-size: 20pt;
+  background-color: white;
+  color: black;
 }
 
 .inputbudget {
   margin-top: 50px;
 }
 
-.text-left {
-  margin-top: 80px;
+.text {
+  margin-top: 150px;
+  margin-left:300px;
+  margin-right:300px;
+  text-align: justify;
+  font-size: large;
 }
 
 .text-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+p {
+  margin-bottom: 20px; 
 }
