@@ -7,47 +7,16 @@
     <title>Simulasi Rakit PC</title>
   </head>
   <body>
+    <!--hero section  -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>BUILD YOUR <span>PC</span></h1>
+        <h2>RIGHT NOW!!!</h2>
+      </main>
+    </section>
+    <!--hero section end -->
+
     <div id="header-container"></div>
-    <div class="main">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie nisl eget nibh tristique, 
-        id maximus sem faucibus. Aenean ut dolor a nibh scelerisque viverra. Aenean mi mauris, 
-        vulputate ac nunc a, tempus vehicula tortor. Nulla consectetur sem ac massa fermentum mattis. 
-        Donec ultrices eleifend velit, quis congue sem suscipit ut. Donec iaculis tellus velit, 
-        id porttitor tellus congue a. Praesent egestas, sem sit amet auctor euismod, mauris risus efficitur elit, 
-        quis tempus nunc metus et est. Praesent non dui vulputate, dapibus mi vitae, dignissim nunc. Nam velit mi, 
-        tincidunt vel diam a, interdum venenatis lorem. Nam varius lectus at posuere porta. Integer efficitur elem
-        entum justo quis tincidunt. Proin ultricies fermentum nulla, rutrum hendrerit tortor hendrerit vel. Curabi
-        tur feugiat ipsum eu metus cursus dignissim ac nec eros. Nunc turpis eros, accumsan ut turpis sit amet, temp
-        or auctor eros. Cras placerat fringilla molestie.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie nisl eget nibh tristique, 
-        id maximus sem faucibus. Aenean ut dolor a nibh scelerisque viverra. Aenean mi mauris, 
-        vulputate ac nunc a, tempus vehicula tortor. Nulla consectetur sem ac massa fermentum mattis. 
-        Donec ultrices eleifend velit, quis congue sem suscipit ut. Donec iaculis tellus velit, 
-        id porttitor tellus congue a. Praesent egestas, sem sit amet auctor euismod, mauris risus efficitur elit, 
-        quis tempus nunc metus et est. Praesent non dui vulputate, dapibus mi vitae, dignissim nunc. Nam velit mi, 
-        tincidunt vel diam a, interdum venenatis lorem. Nam varius lectus at posuere porta. Integer efficitur elem
-        entum justo quis tincidunt. Proin ultricies fermentum nulla, rutrum hendrerit tortor hendrerit vel. Curabi
-        tur feugiat ipsum eu metus cursus dignissim ac nec eros. Nunc turpis eros, accumsan ut turpis sit amet, temp
-        or auctor eros. Cras placerat fringilla molestie.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie nisl eget nibh tristique, 
-        id maximus sem faucibus. Aenean ut dolor a nibh scelerisque viverra. Aenean mi mauris, 
-        vulputate ac nunc a, tempus vehicula tortor. Nulla consectetur sem ac massa fermentum mattis. 
-        Donec ultrices eleifend velit, quis congue sem suscipit ut. Donec iaculis tellus velit, 
-        id porttitor tellus congue a. Praesent egestas, sem sit amet auctor euismod, mauris risus efficitur elit, 
-        quis tempus nunc metus et est. Praesent non dui vulputate, dapibus mi vitae, dignissim nunc. Nam velit mi, 
-        tincidunt vel diam a, interdum venenatis lorem. Nam varius lectus at posuere porta. Integer efficitur elem
-        entum justo quis tincidunt. Proin ultricies fermentum nulla, rutrum hendrerit tortor hendrerit vel. Curabi
-        tur feugiat ipsum eu metus cursus dignissim ac nec eros. Nunc turpis eros, accumsan ut turpis sit amet, temp
-        or auctor eros. Cras placerat fringilla molestie.</p>
-
-
-      <p>DITES DULU</p>
-      <p>DITES DULU</p>
-      <p>DITES DULU</p>
-    </div>
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         fetch("header.html") // Pastikan lokasi file benar
@@ -67,24 +36,5 @@
           });
       });
     </script>
-
-<div id="footer-container"></div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch("footer.html") 
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Network response was not ok " + response.statusText);
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => {
-                console.error("Error loading header:", error);
-         });
-    });
-</script>
   </body>
 </html>
