@@ -1,0 +1,22 @@
+/* css untuk package.html */
+
+.hero1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(bg-package.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+.hero1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.3) 15%);
+  z-index: 1;
+}

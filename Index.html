@@ -12,29 +12,16 @@
       <main class="content">
         <h1>BUILD YOUR <span>PC</span></h1>
         <h2>RIGHT NOW!!!</h2>
+        <p1
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          atque non hic eligendi. Quibusdam omnis dolorem cum vel, deleniti odit
+          fugiat iure laudantium nostrum sed. Quia sunt perferendis modi
+          iure!</p1
+        >
       </main>
     </section>
     <!--hero section end -->
-
     <div id="header-container"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("header.html") // Pastikan lokasi file benar
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error(
-                "Network response was not ok " + response.statusText
-              );
-            }
-            return response.text();
-          })
-          .then((data) => {
-            document.getElementById("header-container").innerHTML = data;
-          })
-          .catch((error) => {
-            console.error("Error loading header:", error);
-          });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
