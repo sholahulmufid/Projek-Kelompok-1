@@ -3,55 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="about.css" rel="stylesheet" />
     <title>Simulasi Rakit PC</title>
   </head>
   <body>
+    <section class="hero4">
+      <div class="main">
+        <h1>Projek Kelompok 1</h1>
+        <p>
+          Sebuah projek dari kelompok satu untuk memenuhi Tugas Mata Kuliah
+          Algoritma dan Pemrograman (+P)
+        </p>
+        <p>Dosen pengampu : Dr. Siscka Elvyanti, M.T</p>
+      </div>
+    </section>
+
+    <!-- PENTING -->
     <div id="header-container"></div>
-    <div class="main">
-      <h1>Projek Kelompok 1</h1>
-      <p>Sebuah projek dari kelompok satu untuk memenuhi Tugas Mata Kuliah Algoritma dan Pemrograman (+P)</p>
-      <p>Dosen pengampu : Dr. Siscka Elvyanti, M.T</p>
-    </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("header.html") // Pastikan lokasi file benar
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error(
-                "Network response was not ok " + response.statusText
-              );
-            }
-            return response.text();
-          })
-          .then((data) => {
-            document.getElementById("header-container").innerHTML = data;
-          })
-          .catch((error) => {
-            console.error("Error loading header:", error);
-          });
-      });
-    </script>
-
-
-<div id="footer-container"></div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch("footer.html") 
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Network response was not ok " + response.statusText);
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => {
-                console.error("Error loading header:", error);
-         });
-    });
-</script>
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
   </body>
 </html>
