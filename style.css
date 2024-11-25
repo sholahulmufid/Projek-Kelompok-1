@@ -126,7 +126,6 @@ body {
 
 p {
   margin: 20px;
-
 }
 
 .container{
@@ -211,3 +210,42 @@ ul{
     width: 100%;
 }
 }
+
+.main a {
+  color: black;
+}
+
+.footer-home {
+  text-align: center;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  margin: 10px;
+}
+
+select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  color: #444;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  appearance: none;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #888;
+}
+
+select:focus {
+  border-color: #555;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
