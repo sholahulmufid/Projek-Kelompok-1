@@ -34,7 +34,7 @@ body {
 .card2,
 .card3 {
   width: 90%; /* Ubah ini menjadi persentase */
-  max-width: 20rem;
+  max-width: 25rem;
   border: 1px solid #000000;
   border-radius: 8px;
   overflow: hidden;
@@ -52,6 +52,7 @@ body {
   justify-content: center; /* Memusatkan konten */
   align-items: center; /* Menyelaraskan konten secara vertikal */
   margin: 20px; /* Margin untuk jarak dari elemen lain */
+  position: relative;
 }
 
 .search-input {
@@ -59,10 +60,11 @@ body {
   border: 1px solid #ffffff; /* Border abu-abu */
   border-radius: 5px; /* Sudut melengkung */
   font-size: 1rem; /* Ukuran font */
-  width: 300px; /* Lebar input */
+  width: 400px; /* Lebar input */
   max-width: 100%; /* Lebar maksimum 100% untuk responsivitas */
+  background-color: black;
+  color: #00ff1a;
 }
-
 .search-button {
   padding: 10px 15px; /* Ruang dalam tombol */
   margin-left: 10px; /* Jarak antara input dan tombol */
