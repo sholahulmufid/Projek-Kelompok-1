@@ -30,17 +30,25 @@
         </select>
 
         <label for="Memory">Pilih Memory (RAM) anda:</label>
-        <select id="Motherboard">
+        <select id="Memory">
           <option value="4GB">4GB (Rp.100.000)</option>
           <option value="8GB">8GB (Rp.100.000)</option>
           <option value="16GB">16GB (Rp.100.000)</option>
           <option value="32GB">32GB (Rp.100.000)</option>
         </select>
+
+        <label for="Graphics-Card">Pilih Graphics Card anda:</label>
+        <select id="Graphics-Card">
+          <option value="4GB">4GB (Rp.100.000)</option>
+          <option value="8GB">8GB (Rp.100.000)</option>
+          <option value="16GB">16GB (Rp.100.000)</option>
+          <option value="32GB">32GB (Rp.100.000)</option>
+        </select>        
     </div>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("header.html") // Pastikan lokasi file benar
+        fetch("header.html") 
           .then((response) => {
             if (!response.ok) {
               throw new Error(

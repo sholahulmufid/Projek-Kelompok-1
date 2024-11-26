@@ -17,7 +17,6 @@ Deskripsi singkat tentang proyek Anda, apa tujuannya, dan manfaat yang diharapka
 ## Fitur
 
 - Menyediakan berbagai rekomendasi untuk komponen-komponen perkitan PC dengan beberapa kategori, yaitu :
-   - BY Budget
    - Custom
    - Paket
 
