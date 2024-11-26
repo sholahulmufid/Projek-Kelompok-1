@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "poppins", sans-serif;
+}
+
+.hero1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(bg-package.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  gap: 20px;
+}
+.hero1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.3) 15%);
+  z-index: 1;
+}
+
+/* Card container */
+.card,
+.card1,
+.card2,
+.card3 {
+  width: 90%; /* Ubah ini menjadi persentase */
+  max-width: 20rem;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  z-index: 2;
+}
+
+/* Seach Bar */
+.search-bar {
+  z-index: 2;
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: center; /* Memusatkan konten */
+  align-items: center; /* Menyelaraskan konten secara vertikal */
+  margin: 20px; /* Margin untuk jarak dari elemen lain */
+}
+
+.search-input {
+  padding: 10px; /* Ruang dalam input */
+  border: 1px solid #ffffff; /* Border abu-abu */
+  border-radius: 5px; /* Sudut melengkung */
+  font-size: 1rem; /* Ukuran font */
+  width: 300px; /* Lebar input */
+  max-width: 100%; /* Lebar maksimum 100% untuk responsivitas */
+}
+
+.search-button {
+  padding: 10px 15px; /* Ruang dalam tombol */
+  margin-left: 10px; /* Jarak antara input dan tombol */
+  background-color: #00ff1a; /* Warna latar belakang tombol */
+  color: rgb(0, 0, 0); /* Warna teks tombol */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut melengkung */
+  cursor: pointer; /* Kursor tangan saat hover */
+  font-size: 1rem; /* Ukuran font tombol */
+  transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+.search-button:hover {
+  background-color: #000000;
+  color: #2fff00; /* Warna latar belakang saat hover */
+}
+
+/* Card image */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Card body */
+.card-body {
+  padding: 16px; /* Add some space inside the card */
+}
+
+/* Title inside card */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* Text inside card */
+.card-text {
+  font-size: 0.7rem;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000000; /* Darker blue on hover */
+  color: #00ff3c;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}

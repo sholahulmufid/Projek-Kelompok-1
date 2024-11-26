@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 5%;
+  padding: 1px 5%;
   left: 0;
   right: 0;
   top: 0;
@@ -71,7 +71,7 @@ body {
 }
 
 .navbar .navbar-nav a:hover::after {
-  transform: scaleX(0.9);
+  transform: scaleX(0.7);
 }
 
 .container {
