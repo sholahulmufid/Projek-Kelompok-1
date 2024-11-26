@@ -7,25 +7,81 @@
     <title>Simulasi Rakit PC</title>
   </head>
   <body>
+    <!--hero section  -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>BUILD YOUR <span>PC</span></h1>
+        <h2>RIGHT NOW!!!</h2>
+        <p1
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          atque non hic eligendi. Quibusdam omnis dolorem cum vel, deleniti odit
+          fugiat iure laudantium nostrum sed. Quia sunt perferendis modi
+          iure!</p1
+        >
+      </main>
+    </section>
+    <!--hero section end -->
     <div id="header-container"></div>
     <div class="main">
-      <h1>Selamat Datang di Website Simulasi Rakit PC</h1>
-      <p>Website ini hadir untuk membantu Anda menemukan komponen komputer terbaik yang sesuai dengan kebutuhan Anda. Di sini, Anda dapat dengan mudah memilih berbagai komponen untuk merakit PC impian.</p>
-      <h2><a href="custom.html">1. Custom</a></h2>
-      <p>Sesuaikan setiap elemen komputer Anda sesuai dengan preferensi pribadi. Pilih komponen yang sesuai dengan kebutuhan spesifik Anda untuk pengalaman yang lebih personal.</p>
-      <h2><a href="package.html">2. Package</a></h2>
-      <p>Tidak ingin repot memilih satu per satu? Pilih dari berbagai paket yang telah kami siapkan, sesuai dengan kategori kebutuhan Anda. Mudah, cepat, dan praktis!</p>
-      <p>Pada bagian ini juga anda dapat memilih package yang sesuai dengan anggaran anda.</p>
-      <div class="footer-home">
-        <p>====Ayo kostumisasi komputer anda sekarang juga====</p>
-        <P>Terima Kasih telah mengunjungi website ini :)</P>
-      </div>
-        
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie
+        nisl eget nibh tristique, id maximus sem faucibus. Aenean ut dolor a
+        nibh scelerisque viverra. Aenean mi mauris, vulputate ac nunc a, tempus
+        vehicula tortor. Nulla consectetur sem ac massa fermentum mattis. Donec
+        ultrices eleifend velit, quis congue sem suscipit ut. Donec iaculis
+        tellus velit, id porttitor tellus congue a. Praesent egestas, sem sit
+        amet auctor euismod, mauris risus efficitur elit, quis tempus nunc metus
+        et est. Praesent non dui vulputate, dapibus mi vitae, dignissim nunc.
+        Nam velit mi, tincidunt vel diam a, interdum venenatis lorem. Nam varius
+        lectus at posuere porta. Integer efficitur elem entum justo quis
+        tincidunt. Proin ultricies fermentum nulla, rutrum hendrerit tortor
+        hendrerit vel. Curabi tur feugiat ipsum eu metus cursus dignissim ac nec
+        eros. Nunc turpis eros, accumsan ut turpis sit amet, temp or auctor
+        eros. Cras placerat fringilla molestie.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie
+        nisl eget nibh tristique, id maximus sem faucibus. Aenean ut dolor a
+        nibh scelerisque viverra. Aenean mi mauris, vulputate ac nunc a, tempus
+        vehicula tortor. Nulla consectetur sem ac massa fermentum mattis. Donec
+        ultrices eleifend velit, quis congue sem suscipit ut. Donec iaculis
+        tellus velit, id porttitor tellus congue a. Praesent egestas, sem sit
+        amet auctor euismod, mauris risus efficitur elit, quis tempus nunc metus
+        et est. Praesent non dui vulputate, dapibus mi vitae, dignissim nunc.
+        Nam velit mi, tincidunt vel diam a, interdum venenatis lorem. Nam varius
+        lectus at posuere porta. Integer efficitur elem entum justo quis
+        tincidunt. Proin ultricies fermentum nulla, rutrum hendrerit tortor
+        hendrerit vel. Curabi tur feugiat ipsum eu metus cursus dignissim ac nec
+        eros. Nunc turpis eros, accumsan ut turpis sit amet, temp or auctor
+        eros. Cras placerat fringilla molestie.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie
+        nisl eget nibh tristique, id maximus sem faucibus. Aenean ut dolor a
+        nibh scelerisque viverra. Aenean mi mauris, vulputate ac nunc a, tempus
+        vehicula tortor. Nulla consectetur sem ac massa fermentum mattis. Donec
+        ultrices eleifend velit, quis congue sem suscipit ut. Donec iaculis
+        tellus velit, id porttitor tellus congue a. Praesent egestas, sem sit
+        amet auctor euismod, mauris risus efficitur elit, quis tempus nunc metus
+        et est. Praesent non dui vulputate, dapibus mi vitae, dignissim nunc.
+        Nam velit mi, tincidunt vel diam a, interdum venenatis lorem. Nam varius
+        lectus at posuere porta. Integer efficitur elem entum justo quis
+        tincidunt. Proin ultricies fermentum nulla, rutrum hendrerit tortor
+        hendrerit vel. Curabi tur feugiat ipsum eu metus cursus dignissim ac nec
+        eros. Nunc turpis eros, accumsan ut turpis sit amet, temp or auctor
+        eros. Cras placerat fringilla molestie.
+      </p>
+
+      <p>DITES DULU</p>
+      <p>DITES DULU</p>
+      <p>DITES DULU</p>
     </div>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("header.html") 
+        fetch("header.html") // Pastikan lokasi file benar
           .then((response) => {
             if (!response.ok) {
               throw new Error(
@@ -43,23 +99,25 @@
       });
     </script>
 
-<div id="footer-container"></div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch("footer.html") 
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Network response was not ok " + response.statusText);
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => {
-                console.error("Error loading footer:", error);
-         });
-    });
-</script>
+    <div id="footer-container"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(
+                "Network response was not ok " + response.statusText
+              );
+            }
+            return response.text();
+          })
+          .then((data) => {
+            document.getElementById("footer-container").innerHTML = data;
+          })
+          .catch((error) => {
+            console.error("Error loading header:", error);
+          });
+      });
+    </script>
   </body>
 </html>

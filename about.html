@@ -3,43 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="about.css" rel="stylesheet" />
     <title>Simulasi Rakit PC</title>
   </head>
   <body>
     <div id="header-container"></div>
     <div class="main">
       <h1>Projek Kelompok 1</h1>
-      <p>Sebuah projek dari kelompok satu untuk memenuhi Tugas Mata Kuliah Algoritma dan Pemrograman (+P)</p>
+      <p>
+        Sebuah projek dari kelompok satu untuk memenuhi Tugas Mata Kuliah
+        Algoritma dan Pemrograman (+P)
+      </p>
       <p>Dosen pengampu : Dr. Siscka Elvyanti, M.T</p>
-
-      <h4>Anggota Kelompok:</h4>
-      <ul>
-        <li>Achmad Mufid</li>
-        <li>Muzzaky Ibrahim (2404408)</li>
-        <li>Regan</li>
-        <li>Ismail</li>
-      </ul>
-      
-
-
-      <h2>FAQ</h2>
-      <h3>1. Bagaimana saya menemukan barang yang diinginkan di online shop?</h3>
-      <p>Website kami hanya memberikan opsi terbaik untuk komputer anda, jika anda ingin membelinya anda dapat mencari sendiri di online shop</p>
-      <h3>2. Mengapa harga tidak sama dengan online shop?</h3>
-      <p>Kami mengambil sample harga dengan rata rata yang kami ambil di lapangan pada saat website ini dibuat (November 2024)</p>
     </div>
-
-
-
-
-
-
-
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        fetch("header.html") 
+        fetch("header.html") // Pastikan lokasi file benar
           .then((response) => {
             if (!response.ok) {
               throw new Error(
@@ -57,24 +37,25 @@
       });
     </script>
 
-
-<div id="footer-container"></div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch("footer.html") 
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Network response was not ok " + response.statusText);
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById("footer-container").innerHTML = data;
-            })
-            .catch(error => {
-                console.error("Error loading header:", error);
-         });
-    });
-</script>
+    <div id="footer-container"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("footer.html")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(
+                "Network response was not ok " + response.statusText
+              );
+            }
+            return response.text();
+          })
+          .then((data) => {
+            document.getElementById("footer-container").innerHTML = data;
+          })
+          .catch((error) => {
+            console.error("Error loading header:", error);
+          });
+      });
+    </script>
   </body>
 </html>
