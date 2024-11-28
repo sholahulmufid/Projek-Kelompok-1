@@ -18,11 +18,12 @@
           type="text"
           placeholder="Input your budget...."
           class="search-input"
+          id="searchInput"
         />
-        <button class="search-button">Search</button>
+        <button class="search-button" id="searchButton">Search</button>
       </div>
-      <div class="row">
-        <div class="card">
+      <div class="card-container" id="cardContainer">
+        <div class="card" data-name="20000000">
           <img src="1.avif"" class="card-img-top" alt="Placeholder Image" />
           <div class="card-body">
             <h5 class="card-title">PAKET SULTAN</h5>
@@ -34,7 +35,7 @@
             <a href="#" class="btn">Rp20.000.000</a>
           </div>
         </div>
-        <div class="card1">
+        <div class="card" data-name="15000000">
           <img src="1.avif"" class="card-img-top" alt="Placeholder Image" />
           <div class="card-body">
             <h5 class="card-title">PAKET MENENGAH</h5>
@@ -46,7 +47,7 @@
             <a href="#" class="btn">Rp15.000.000</a>
           </div>
         </div>
-        <div class="card2">
+        <div class="card" data-name="10000000">
           <img src="1.avif"" class="card-img-top" alt="Placeholder Image" />
           <div class="card-body">
             <h5 class="card-title">PAKET STANDARD</h5>
@@ -58,7 +59,7 @@
             <a href="#" class="btn">Rp10.000.000</a>
           </div>
         </div>
-        <div class="card3">
+        <div class="card" data-name="5000000">
           <img src="1.avif"" class="card-img-top" alt="Placeholder Image" />
           <div class="card-body">
             <h5 class="card-title">PAKET STANDARD</h5>
@@ -71,7 +72,13 @@
           </div>
         </div>
       </div>
+      <div id="noResults">
+        <p>Tidak ada hasil yang cocok dengan pencarian Anda.</p>
+      </div>
     </section>
+    <!-- untuk js search bar -->
+    <script src="bybudget.js"></script>
+    <!--  -->
     <!-- ini jangan di apus -->
     <div id="header-container"></div>
     <script src="script.js"></script>
