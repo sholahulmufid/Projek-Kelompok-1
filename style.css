@@ -138,19 +138,20 @@ body {
 .hero .content h1 {
   color: rgb(255, 255, 255);
   font-size: 5em;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
   margin-top: 0;
+  font-weight: 800;
 }
 .hero .content h1 span {
   color: rgb(255, 0, 0);
   font-size: 1em;
-  text-shadow: 5px 5px 5px rgb(0, 0, 0);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 4px 3px 5px rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .hero .content h2 {
   color: rgb(0, 0, 0);
   font-size: 5em;
-  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+  text-shadow: 3px 4px 5px rgb(255, 255, 255);
 }
 .hero .content p1 {
   mix-blend-mode: difference;
