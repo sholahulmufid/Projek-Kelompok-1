@@ -1,48 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< Updated upstream
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="web\css\style.css" rel="stylesheet"/>    <title>Rakit PC</title> 
-    <!-- judul webisite nya -->
-</head>
-
-<body>
-    <div id="header-container"></div>
-
-    
-    <div class="text-left">
-        <p>DITES DULU</p>
-    </div>
-
-
-
-
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("header.html")  // Pastikan lokasi file benar
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error("Network response was not ok " + response.statusText);
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById("header-container").innerHTML = data;
-                })
-                .catch(error => {
-                    console.error("Error loading header:", error);
-                });
-        });
-    </script>
-
-
-</body>
-</html> 
-=======
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,4 +17,3 @@
     <script src="/web/js/script.js"></script>
   </body>
 </html>
->>>>>>> Stashed changes
