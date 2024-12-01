@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(bg-package.png);
+  background-image: url(/resource/img/background/bg-package.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
