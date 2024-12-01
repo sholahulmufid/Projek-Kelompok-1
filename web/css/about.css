@@ -4,11 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< Updated upstream
-  background-image: url(/Resource/img/background/bg-about.png);
-=======
   background-image: url(/resource/img/background/bg-about.png);
->>>>>>> Stashed changes
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
