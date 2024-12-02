@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/resource/img/background/bg-about.png);
+  background-image: url(/Resource/img/background/bg-about.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,10 +36,10 @@
 .pilihan {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
@@ -79,7 +79,7 @@ h3 {
 
 .button {
   padding: 10px 20px; /* Ruang dalam tombol */
-
+  margin-top: auto;
   background-color: #00ff1a; /* Warna latar belakang tombol */
   color: rgb(0, 0, 0); /* Warna teks tombol */
   border: none; /* Tanpa border */
