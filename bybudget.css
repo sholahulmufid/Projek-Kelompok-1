@@ -136,3 +136,8 @@ body {
   display: none;
   z-index: 2;
 }
+
+.card-container .card .card-body .detail {
+  margin-bottom: 20px;
+  font-family: "poppins", sans-serif;
+}
