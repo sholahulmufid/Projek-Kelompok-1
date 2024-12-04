@@ -153,8 +153,17 @@ body {
   font-size: 5em;
   text-shadow: 3px 4px 5px rgb(255, 255, 255);
 }
+.hero .content h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-shadow: 3px 4px 5px rgb(0, 0, 0);
+  font-weight: 300;
+  line-height: 100px 0;
+}
 .hero .content p1 {
   mix-blend-mode: difference;
+  font-weight: 100;
+  line-height: 100px 0;
 }
 /* hero end */
 
