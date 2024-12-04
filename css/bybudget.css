@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(bg-package.png);
+  background-image: url(/img/bg-package.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -75,7 +75,19 @@ body {
 
 /* Card body */
 .card-body {
-  padding: 16px; /* Add some space inside the card */
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 90%; 
+  max-width: 25rem; 
+  border: 1px solid #000;
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  overflow: hidden; 
 }
 
 /* Title inside card */
@@ -140,4 +152,29 @@ body {
 .card-container .card .card-body .detail {
   margin-bottom: 20px;
   font-family: "poppins", sans-serif;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-top: auto;
+  background-color: #00ff1a;
+  color: #000;
+  border: none;
+  border-radius: 5px; /* Disesuaikan */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  font-weight: bolder;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #00ff1a;
+}
+
+.harga {
+  color: rgb(43, 255, 0);
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 20px;
 }
