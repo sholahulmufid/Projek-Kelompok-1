@@ -31,18 +31,22 @@
   z-index: 2;
   font-size: 1.7rem;
 }
-.anggota a {
-  color: rgb(0, 251, 255);
-  font-size: 1.1rem;
-  text-decoration: underline;
-}
+
 .large-icon {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   width: 35px; /* Lebar ikon */
   height: 35px;
   vertical-align: middle;
+  transition: transform 0.3s ease;
+  display: inline-block;
 }
 li {
   font-size: 1.2rem;
   padding: 8px;
+}
+
+.large-icon:hover {
+  transition: 0.4s;
+  transform: scale(1.5) rotate(10deg);
+  color: rgb(255, 0, 0);
 }

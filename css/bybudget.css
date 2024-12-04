@@ -1,10 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  font-family: "poppins", sans-serif;
+  background-color: #000;
 }
-
 .hero1 {
   min-height: 100vh;
   display: flex;
@@ -37,13 +33,14 @@ body {
   gap: 10px; /* Margin untuk jarak dari elemen lain */
   position: relative;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
 
 .search-bar {
   padding: 10px; /* Ruang dalam input */
   border: 1px solid #ffffff; /* Border abu-abu */
   border-radius: 5px; /* Sudut melengkung */
-  font-size: 1rem; /* Ukuran font */
+  font-size: 16px; /* Ukuran font */
   width: 400px; /* Lebar input */
   max-width: 100%; /* Lebar maksimum 100% untuk responsivitas */
   background-color: black;
@@ -57,7 +54,7 @@ body {
   border: none; /* Tanpa border */
   border-radius: 5px; /* Sudut melengkung */
   cursor: pointer; /* Kursor tangan saat hover */
-  font-size: 1rem; /* Ukuran font tombol */
+  font-size: 16px; /* Ukuran font tombol */
   transition: background-color 0.3s; /* Transisi saat hover */
 }
 
@@ -78,8 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 90%;
-  max-width: 25rem;
+  width: 350px;
   border: 1px solid #000;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0);
@@ -92,7 +88,7 @@ body {
 
 /* Title inside card */
 .card-title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 12px;
   color: #ffffff;
@@ -100,7 +96,7 @@ body {
 
 /* Text inside card */
 .card-text {
-  font-size: 0.7rem;
+  font-size: 14px;
   color: #ffffff;
   margin-bottom: 16px;
   line-height: 1.5;
@@ -120,8 +116,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 90%;
-  max-width: 25rem;
+  width: 350px;
+
   border: 1px solid #000;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0);
@@ -156,7 +152,7 @@ body {
   border: none;
   border-radius: 5px; /* Disesuaikan */
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 16px;
   transition: background-color 0.3s;
   font-weight: bolder;
   bottom: 10px;
@@ -172,4 +168,28 @@ body {
   font-weight: bold;
   margin: 10px 0;
   font-size: 20px;
+}
+label {
+  font-size: 12px;
+}
+
+/*  */
+@media (max-width: 430px) {
+  .hero1 {
+    background-size: cover;
+    background-size: 100%;
+  }
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-bar {
+    width: 300px;
+  }
+}
+@media (max-width: 1180px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
