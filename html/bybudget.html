@@ -13,14 +13,24 @@
   </head>
   <body>
     <section class="hero1">
-      <div class="search-bar">
+      <div class="search-container">
+        <label for="minPrice">Minimum Price:</label>
         <input
-          type="text"
-          placeholder="Input your budget...."
-          class="search-input"
-          id="searchInput"
+          type="number"
+          id="minPrice"
+          class="search-bar"
+          placeholder="Min price"
         />
-        <button class="search-button" id="searchButton">Search</button>
+
+        <label for="maxPrice">Maximum Price:</label>
+        <input
+          type="number"
+          id="maxPrice"
+          class="search-bar"
+          placeholder="Max price"
+        />
+
+        <button id="searchButton" class="search-button">Cari</button>
       </div>
       <div class="card-container" id="cardContainer">
         <div class="card" data-name="1500000">
@@ -43,7 +53,7 @@
             <li>PSU : Vurrion MV 400 Watt 80+</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp1.500.000</p1>
           </div>
           <a
@@ -74,7 +84,7 @@
             <li>PSU : 500 Watt 80+</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp2.675.000</p1>
           </div>
           <a
@@ -105,7 +115,7 @@
             <li>PSU : Vurrion MV 500 Watt 80+</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp3.975.000</p1>
           </div>
           <a
@@ -134,7 +144,7 @@
             <li>PSU : Vurrion MV 500 Watt 80+</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp5.775.000</p1>
           </div>
           <a
@@ -163,7 +173,7 @@
             <li>Power Supply: DEEPCOOL PF550 550W 80+ FLAT CABLE</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp9.660.000</p1>
           </div>
           <a
@@ -193,7 +203,7 @@
             <li>Casing: TX Gaming</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp.17.250.000</p1>
           </div>
           <a
@@ -223,13 +233,13 @@
             <li>PSU : Varro/Armour 500 Watt</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp3.135.000</p1>
           </div>
           <a
             href="https://shopee.co.id/PC-Gaming-Ryzen-3-3200G-With-Vega-8-SSD-120-GB-HDD-500GB-DDR-8-GB-i.25647746.7914539540?sp_atk=e2b2fb88-ea94-4274-8683-b47e96101c65"
             class="button"
-            >Rp3.135.000</a
+            >BUY</a
           >
         </div>
 
@@ -253,7 +263,7 @@
             <li>PSU : PC COOLER KF650 - 650W 80+</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp6.925.000</p1>
           </div>
           <a
@@ -281,7 +291,7 @@
             <li>PSU : Enlight 400 Watt 80 Bronze</li>
           </ul>
 
-          <div class="harga">
+          <div class="price">
             <p1>Rp.7.420.000</p1>
           </div>
           <a

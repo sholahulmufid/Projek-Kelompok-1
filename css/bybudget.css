@@ -29,7 +29,7 @@ body {
 }
 
 /* Seach Bar */
-.search-bar {
+.search-container {
   z-index: 2;
   display: flex; /* Menggunakan flexbox untuk tata letak */
   justify-content: center; /* Memusatkan konten */
@@ -39,7 +39,7 @@ body {
   margin-top: 100px;
 }
 
-.search-input {
+.search-bar {
   padding: 10px; /* Ruang dalam input */
   border: 1px solid #ffffff; /* Border abu-abu */
   border-radius: 5px; /* Sudut melengkung */
@@ -166,7 +166,7 @@ body {
   color: #00ff1a;
 }
 
-.harga {
+.price {
   color: rgb(43, 255, 0);
   font-weight: bold;
   margin: 10px 0;
