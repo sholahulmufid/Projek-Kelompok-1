@@ -40,6 +40,36 @@
               <option value="1030000">Kingston Fury Beast DDR4 3200MHz (PC25600) 32GB (2x16GB) - Rp.1.030.000</option>
             </select>
 
+          <label for="VGA">Pilih VGA:</label>
+            <select id="VGA" onchange="hitungTotal()">
+              <option value="0">Pilih VGA</option>
+              <option value="3450000">Gigabyte GeForce GTX 1660 SUPER 6GB 192Bit  DDR6 - Rp.3.450.000</option>
+              <option value="4800000">Gigabyte GeForce RTX 2060 6GB 192Bit GDDR6 - Rp.4.800.000</option>
+              <option value="3200000">Gigabyte GeForce RTX 3050 8 GB 128 Bit GDDR6 Windforce - Rp.3.200.000</option>
+              <option value="6700000">Gigabyte GeForce RTX 3060 Ti 8GB 256 Bit GDDR6 Eagle - Rp.6.700.000</option>
+            </select>
+
+          <label for="SSD">Pilih SSD:</label>
+            <select id="SSD" onchange="hitungTotal()">
+              <option value="0">Pilih SSD</option>
+              <option value="365000">Gigabyte SSD M.2 256GB NVME PCIe Gen3 x4 - Rp.365.000</option>
+              <option value="555000">Gigabyte SSD M.2 512GB NVME PCIe Gen3 x4 - Rp.555.000</option>
+              <option value="850000">Gigabyte SSD M.2 1TB NVME PCIe Gen3 x4 - Rp.850.000</option>
+              <option value="1500000">Samsung SSD 870 EVO 1TB - Rp.1.500.000</option>
+              <option value="31800000">LaCie 4TB 1big Dock SSD Pro Thunderbolt 3 - Rp.31.800.000</option>
+            </select>
+
+          <label for="HARDDISK">Pilih Hard disk:</label>
+            <select id="HARDDISK" onchange="hitungTotal()">
+              <option value="0">Pilih Hard disk</option>
+              <option value="985000">Western Digital 3.5" 2 TB Sata3 Purple - Rp.985.000</option>
+              <option value="1490000">Western Digital 3.5" 4 TB Sata3 Purple - Rp.1.490.000</option>
+              <option value="2590000">Western Digital 3.5" 6 TB Sata3 Purple - Rp.2.590.000</option>
+              <option value="3450000">Western Digital 3.5" 8 TB Sata3 Purple - Rp.3.450.000</option>
+              <option value="4450000">Western Digital 3.5" 10 TB Sata3 Purple - Rp.4.450.000</option>
+            </select>
+
+
 
 
 
@@ -54,9 +84,12 @@
           const prosesor = parseInt(document.getElementById('prosesor').value, 10) || 0;
           const Motherboard = parseInt(document.getElementById('Motherboard').value, 10) || 0;
           const ram = parseInt(document.getElementById('ram').value, 10) || 0;
+          const VGA = parseInt(document.getElementById('VGA').value, 10) || 0;
+          const SSD = parseInt(document.getElementById('SSD').value, 10) || 0;
+          const HARDDISK = parseInt(document.getElementById('HARDDISK').value, 10) || 0;
 
           // Hitung total harga
-          const total = prosesor + ram + Motherboard;
+          const total = prosesor + ram + Motherboard + VGA +SSD + HARDDISK;
 
           // Tampilkan total harga
           document.getElementById('total').textContent = `Rp${total.toLocaleString()}`;
