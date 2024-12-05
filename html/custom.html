@@ -69,27 +69,32 @@
               <option value="4450000">Western Digital 3.5" 10 TB Sata3 Purple - Rp.4.450.000</option>
             </select>
 
-
-
-
-
-
+          <label for="PSU">Pilih PSU:</label>
+            <select id="PSU" onchange="hitungTotal()">
+              <option value="0">Pilih PSU</option>
+              <option value="625000">MSI MAG A500DN 500W 80 Plus Standard - Rp.625.000</option>
+              <option value="735000">MSI MAG A600DN 600W 80 Plus Standard - Rp.735.000</option>
+              <option value="935000">MSI MAG A750BN PCIE5 750W 80 Plus Bronze - Rp.935.000</option>
+              <option value="1520000">MSI MAG A750GL PCIE5 750W 80 Plus Gold Full Modular - Rp.1.520.000</option>
+              <option value="2620000">MSI MPG A1000G PCIE5 1000W 80 Plus Gold Full Modular - Rp.2.620.000</option>
+            </select>
 
 
           <p>Total Harga: <span id="total">Rp0</span></p>
 
       <script>
         function hitungTotal() {
-          // Ambil nilai dari kedua dropdown
+          // Ambil nilai dari dropdown
           const prosesor = parseInt(document.getElementById('prosesor').value, 10) || 0;
           const Motherboard = parseInt(document.getElementById('Motherboard').value, 10) || 0;
           const ram = parseInt(document.getElementById('ram').value, 10) || 0;
           const VGA = parseInt(document.getElementById('VGA').value, 10) || 0;
           const SSD = parseInt(document.getElementById('SSD').value, 10) || 0;
           const HARDDISK = parseInt(document.getElementById('HARDDISK').value, 10) || 0;
+          const PSU = parseInt(document.getElementById('PSU').value, 10) || 0;
 
           // Hitung total harga
-          const total = prosesor + ram + Motherboard + VGA +SSD + HARDDISK;
+          const total = prosesor + ram + Motherboard + VGA +SSD + HARDDISK + PSU;
 
           // Tampilkan total harga
           document.getElementById('total').textContent = `Rp${total.toLocaleString()}`;
