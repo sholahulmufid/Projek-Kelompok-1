@@ -7,8 +7,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
-    <link href="/css/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <title>Simulasi Rakit PC</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -29,10 +34,38 @@
       </div>
 
       <div class="navbar-icon">
-        <a href="#" id="menu">
-          <span class="material-icons">menu</span>
+        <a href="#" id="hamburger-menu" onclick="showSidebar()">
+          <span class="material-icons">home</span>
         </a>
       </div>
     </nav>
+
+    <div class="sidebar">
+      <a href="/html/home.html">HOME</a>
+      <a href="/html/custom.html">CUSTOM</a>
+      <a href="/html/bybudget.html">PACKAGE</a>
+      <a href="/html/peripheral.html">PERIPHERAL</a>
+      <a href="/html/about.html">ABOUT</a>
+    </div>
+    <!-- <script>
+      document.getElementById("menu").addEventListener("click", showSidebar);
+
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+
+        // Toggle display antara 'none' dan 'flex'
+        if (sidebar.style.display === "none" || sidebar.style.display === "") {
+          sidebar.style.display = "flex"; // Menampilkan sidebar
+        } else {
+          sidebar.style.display = "none"; // Menyembunyikan sidebar
+        }
+      }
+    </script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        feather.replace();
+      });
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
