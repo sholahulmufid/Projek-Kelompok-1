@@ -24,27 +24,17 @@ body {
   z-index: 1;
 }
 
-
 /* Seach Bar */
 .search-container {
   z-index: 2;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  gap: 10px; 
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: center; /* Memusatkan konten */
+  align-items: center; /* Menyelaraskan konten secara vertikal */
+  gap: 10px; /* Margin untuk jarak dari elemen lain */
   position: relative;
   margin-top: 100px;
   flex-wrap: wrap;
 }
-
-
-.search-input {
-  padding: 10px; 
-  border: 1px solid #ffffff; 
-  border-radius: 5px; 
-  font-size: 1rem; 
-  width: 400px; 
-  max-width: 100%; 
 
 .search-bar {
   padding: 10px; /* Ruang dalam input */
@@ -57,16 +47,6 @@ body {
   color: #00ff1a;
 }
 .search-button {
-
-  padding: 10px 15px; 
-  margin-left: 10px; 
-  background-color: #00ff1a; 
-  color: rgb(0, 0, 0); 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  font-size: 1rem; 
-  transition: background-color 0.3s; 
   padding: 10px 15px; /* Ruang dalam tombol */
   margin-left: 10px; /* Jarak antara input dan tombol */
   background-color: #00ff1a; /* Warna latar belakang tombol */
@@ -76,29 +56,24 @@ body {
   cursor: pointer; /* Kursor tangan saat hover */
   font-size: 16px; /* Ukuran font tombol */
   transition: background-color 0.3s; /* Transisi saat hover */
-
 }
 
 .search-button:hover {
   background-color: #000000;
-  color: #2fff00; 
+  color: #2fff00; /* Warna latar belakang saat hover */
 }
 
-
+/* Card image */
 .card-img-top {
   width: 100%;
   height: auto;
   display: block;
 }
 
-
+/* Card body */
 .card-body {
   display: flex;
   flex-direction: column;
-
-  background-color: rgba(0, 0, 0, 0.5); 
-  border: 1px solid #000;
-
   background-color: rgba(0, 0, 0, 0.5);
   width: 350px;
   border: 1px solid #000;
@@ -111,7 +86,7 @@ body {
   overflow: hidden;
 }
 
-
+/* Title inside card */
 .card-title {
   font-size: 20px;
   font-weight: bold;
@@ -119,7 +94,7 @@ body {
   color: #ffffff;
 }
 
-
+/* Text inside card */
 .card-text {
   font-size: 14px;
   color: #ffffff;
@@ -127,34 +102,23 @@ body {
   line-height: 1.5;
 }
 
-
 /* Button */
-
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  align-items: stretch;
-
-
+  gap: 20px;
 }
 
-
+/* Card container */
 .card {
-
-  width: 90%;
-  max-width: 25rem;
-  border: 1px solid #000000;
-
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
   width: 350px;
 
   border: 1px solid #000;
-
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0);
   padding: 15px;
@@ -163,14 +127,9 @@ body {
   flex-shrink: 0;
   overflow: hidden;
   z-index: 2;
-  justify-content: space-between; /* Menyebarkan konten secara merata */
-  height: 100%; /* Pastikan kartu menyesuaikan tinggi container */
-  flex: 1 1 calc(33.33% - 20px); /* Membagi kartu menjadi ukuran proporsional */
-  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam tinggi/ukuran */
-  height: 100%;
 }
 
-
+/*  */
 #noResults {
   color: #ffffff;
   font-size: 20px;
@@ -183,7 +142,6 @@ body {
 .card-container .card .card-body .detail {
   margin-bottom: 20px;
   font-family: "poppins", sans-serif;
-  text-align: left;
 }
 
 .button {
@@ -192,7 +150,7 @@ body {
   background-color: #00ff1a;
   color: #000;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px; /* Disesuaikan */
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;

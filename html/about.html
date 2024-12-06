@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/about.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
     <title>Simulasi Rakit PC</title>
     <script src="https://unpkg.com/feather-icons" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
+    <nav class="navbar">
+      <a href="/html/home.html" class="navbar-logo">SR<span>P</span></a>
+
+      <div class="navbar-nav">
+        <a href="/html/home.html">HOME</a>
+        <a href="/html/custom.html">CUSTOM</a>
+        <a href="/html/bybudget.html">PACKAGE</a>
+        <a href="/html/peripheral.html">PERIPHERAL</a>
+        <a href="/html/about.html">ABOUT</a>
+      </div>
+
+      <div class="navbar-icon">
+        <a href="#" id="hamburger-menu" onclick="showSidebar()">
+          <span class="material-icons">menu</span>
+        </a>
+      </div>
+    </nav>
     <section class="hero4">
       <div class="main">
         <h1>Projek Kelompok 1</h1>
@@ -48,10 +70,9 @@
         </ul>
       </div>
     </section>
-
-    <div id="header-container"></div>
     <div id="footer-container"></div>
     <script src="/js/script.js"></script>
+    <script src="/js/header.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         feather.replace();
