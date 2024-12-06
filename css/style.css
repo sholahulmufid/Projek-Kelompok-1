@@ -74,12 +74,12 @@ body {
   transform: scaleX(0.7);
 }
 
-.navbar-icon #menu {
+.navbar-icon #hamburger-menu {
   color: white;
   display: none;
   cursor: pointer;
 }
-.navbar-icon #menu:hover {
+.navbar-icon #hamburger-menu:hover {
   color: rgb(255, 0, 0);
   display: inline-block;
 }
@@ -242,7 +242,7 @@ ul {
     width: 50%;
     margin-bottom: 30px;
   }
-  .navbar-icon #menu {
+  .navbar-icon #hamburger-menu {
     display: inline-block;
   }
   .navbar .navbar-nav {
