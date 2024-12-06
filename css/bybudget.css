@@ -1,10 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  font-family: "poppins", sans-serif;
+  background-color: #000;
 }
-
 .hero1 {
   min-height: 100vh;
   display: flex;
@@ -29,7 +25,8 @@ body {
 }
 
 
-.search-bar {
+/* Seach Bar */
+.search-container {
   z-index: 2;
   display: flex; 
   justify-content: center; 
@@ -37,7 +34,9 @@ body {
   gap: 10px; 
   position: relative;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
+
 
 .search-input {
   padding: 10px; 
@@ -46,10 +45,19 @@ body {
   font-size: 1rem; 
   width: 400px; 
   max-width: 100%; 
+
+.search-bar {
+  padding: 10px; /* Ruang dalam input */
+  border: 1px solid #ffffff; /* Border abu-abu */
+  border-radius: 5px; /* Sudut melengkung */
+  font-size: 16px; /* Ukuran font */
+  width: 400px; /* Lebar input */
+  max-width: 100%; /* Lebar maksimum 100% untuk responsivitas */
   background-color: black;
   color: #00ff1a;
 }
 .search-button {
+
   padding: 10px 15px; 
   margin-left: 10px; 
   background-color: #00ff1a; 
@@ -59,6 +67,16 @@ body {
   cursor: pointer; 
   font-size: 1rem; 
   transition: background-color 0.3s; 
+  padding: 10px 15px; /* Ruang dalam tombol */
+  margin-left: 10px; /* Jarak antara input dan tombol */
+  background-color: #00ff1a; /* Warna latar belakang tombol */
+  color: rgb(0, 0, 0); /* Warna teks tombol */
+  border: none; /* Tanpa border */
+  border-radius: 5px; /* Sudut melengkung */
+  cursor: pointer; /* Kursor tangan saat hover */
+  font-size: 16px; /* Ukuran font tombol */
+  transition: background-color 0.3s; /* Transisi saat hover */
+
 }
 
 .search-button:hover {
@@ -77,19 +95,25 @@ body {
 .card-body {
   display: flex;
   flex-direction: column;
+
   background-color: rgba(0, 0, 0, 0.5); 
   border: 1px solid #000;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 350px;
+  border: 1px solid #000;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0);
   padding: 15px;
   text-align: center;
   transition: transform 0.2s;
   flex-shrink: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 12px;
   color: #ffffff;
@@ -97,31 +121,47 @@ body {
 
 
 .card-text {
-  font-size: 0.7rem;
+  font-size: 14px;
   color: #ffffff;
   margin-bottom: 16px;
   line-height: 1.5;
 }
 
 
+/* Button */
+
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   align-items: stretch;
+
+
 }
 
 
 .card {
+
   width: 90%;
   max-width: 25rem;
   border: 1px solid #000000;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0);
+
+  display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 10px;
-  font-family: Arial, sans-serif;
+  width: 350px;
+
+  border: 1px solid #000;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  overflow: hidden;
   z-index: 2;
   justify-content: space-between; /* Menyebarkan konten secara merata */
   height: 100%; /* Pastikan kartu menyesuaikan tinggi container */
@@ -154,9 +194,10 @@ body {
   border: none;
   border-radius: 5px; 
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 16px;
   transition: background-color 0.3s;
   font-weight: bolder;
+  bottom: 10px;
 }
 
 .button:hover {
@@ -164,9 +205,33 @@ body {
   color: #00ff1a;
 }
 
-.harga {
+.price {
   color: rgb(43, 255, 0);
   font-weight: bold;
   margin: 10px 0;
   font-size: 20px;
+}
+label {
+  font-size: 12px;
+}
+
+/*  */
+@media (max-width: 430px) {
+  .hero1 {
+    background-size: cover;
+    background-size: 100%;
+  }
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-bar {
+    width: 300px;
+  }
+}
+@media (max-width: 1180px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
