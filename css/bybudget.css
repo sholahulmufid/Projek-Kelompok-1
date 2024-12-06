@@ -36,6 +36,10 @@ body {
   flex-wrap: wrap;
 }
 
+.search-container label {
+  font-size: 16px;
+}
+
 .search-bar {
   padding: 10px; /* Ruang dalam input */
   border: 1px solid #ffffff; /* Border abu-abu */

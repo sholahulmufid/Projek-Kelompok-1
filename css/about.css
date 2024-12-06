@@ -9,6 +9,7 @@
   background-position: center;
   position: relative;
   flex-direction: column;
+  gap: 20px;
 }
 
 .hero4::after {
@@ -23,13 +24,25 @@
 
 .main {
   z-index: 2;
+
+  padding: 1px 5%;
 }
 .anggota {
   z-index: 2;
+
+  padding: 1px 5%;
+}
+.main h1 {
+  z-index: 2;
+  font-size: 30px;
+}
+.main p {
+  z-index: 2;
+  font-size: 20px;
 }
 .anggota h2 {
   z-index: 2;
-  font-size: 1.7rem;
+  font-size: 24px;
 }
 
 .large-icon {
@@ -41,7 +54,7 @@
   display: inline-block;
 }
 li {
-  font-size: 1.2rem;
+  font-size: 20px;
   padding: 8px;
 }
 
@@ -49,4 +62,20 @@ li {
   transition: 0.4s;
   transform: scale(1.5) rotate(10deg);
   color: rgb(255, 0, 0);
+}
+
+@media (max-width: 767px) {
+  .anggota h2,
+  li {
+    z-index: 2;
+    font-size: 16px;
+  }
+  .main h1 {
+    z-index: 2;
+    font-size: 20px;
+  }
+  .main p {
+    z-index: 2;
+    font-size: 15px;
+  }
 }

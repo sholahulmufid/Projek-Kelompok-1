@@ -215,7 +215,7 @@ ul {
     background-color: rgb(0, 0, 0);
     width: 20rem;
     height: 100vh;
-    transition: right 0.6s ease-in-out; /* Animasi saat muncul */
+    transition: right 0.5s ease-in-out; /* Animasi saat muncul */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
