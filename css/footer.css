@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.9);
   padding: 4px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 700;
   font-family: "Poppins", serif;
 }
@@ -69,3 +69,8 @@
   color: #24262b;
   background-color: #ffffff;
 } */
+@media (max-width: 450px) {
+  .footer {
+    font-size: 14px;
+  }
+}
